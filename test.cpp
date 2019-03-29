@@ -8,7 +8,9 @@ using namespace std;
 void ListPeople(const tutorial::t1& address_book) {
 	cout << "a= " << address_book.a() << endl;
 	cout << "b= " << address_book.b() << endl;
+	cout << "name: " << address_book.has_name() << endl;
 	cout << "name= " << address_book.name() << endl;
+	cout << "id: " << address_book.has_id() << endl;
 	cout << "id= " << address_book.id() << endl;
 	cout << "m.size= " << address_book.m().size() << endl;
 	for (auto i=address_book.m().begin(); i != address_book.m().end(); ++i) {
