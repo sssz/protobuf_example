@@ -1,0 +1,13 @@
+syntax = "proto2";
+package tutorial;
+
+
+message t1 {
+    optional int32 a = 1 [default = 10];
+    optional int32 b = 2;
+    oneof one1_oneof {
+        string name = 3;
+        int32 id = 4;
+    }
+    map<int32, string> m = 5;
+}
